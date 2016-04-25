@@ -1,5 +1,4 @@
-Grunt plugin for running msl tests.
-/* CURRENTLY NOT WORKING, REQUIRES AN UPDATE TO MSL */
+Grunt plugin for running msl tests. CURRENTLY NOT WORKING, REQUIRES NPM PUBLISH FROM MSL. 
 
 	msl: {
 	  options: {
