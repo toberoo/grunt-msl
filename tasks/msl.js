@@ -19,13 +19,9 @@ module.exports = function(grunt) {
       grunt.fail.fatal('No target defined. Please set a basedir', 1);
     }
 
-    grunt.log.writeln(colors.green('Starting MSL server on port: '));
+    grunt.log.writeln(colors.green('Starting MSL'));
 
-    server({
-      port: 3000,
-      basedir: basedir,
-      debug: 'true'
-    }, function(args) {
+    server(options, function(args) {
       done();
     });
 
