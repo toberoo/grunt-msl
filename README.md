@@ -1,4 +1,4 @@
-Grunt plugin for running msl tests. Please see http://finraos.github.io/MSL/gettingstarted.html for more information.
+Grunt plugin for running a msl server. Please see http://finraos.github.io/MSL/gettingstarted.html for more information.
 
 	module.exports = function(grunt) {
 
@@ -17,3 +17,5 @@ Grunt plugin for running msl tests. Please see http://finraos.github.io/MSL/gett
 		grunt.loadNpmTasks('grunt-msl');
 		grunt.registerTask('default', ['msl']);
 	}
+
+Tests are written using protractor. This requires an instance of a selenium server in order to run.
