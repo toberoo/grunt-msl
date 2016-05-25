@@ -1,5 +1,4 @@
 'use strict';
-var colors = require('colors');
 var server = require(__dirname + '/../node_modules/msl-server/web-server.js');
 
 module.exports = function(grunt) {
@@ -19,7 +18,7 @@ module.exports = function(grunt) {
       grunt.fail.fatal('No target defined. Please set a basedir', 1);
     }
 
-    grunt.log.writeln(colors.green('Starting MSL'));
+    grunt.log.writeln('Starting MSL');
 
     server(options, function(args) {
       done();
