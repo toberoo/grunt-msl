@@ -48,8 +48,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-protractor-runner');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
-
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'msl', 'protractor']);
-
 };

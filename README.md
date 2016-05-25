@@ -1,9 +1,19 @@
-Grunt plugin for running msl tests. CURRENTLY NOT WORKING, REQUIRES NPM PUBLISH FROM MSL. 
+Grunt plugin for running msl tests.
 
-	msl: {
-	  options: {
-	    port: /*Port to run server on*/,
-	    debug: /*Set to 'true' or 'false'*/
-	  },
-	  target: /*Location of project to wrap msl around*/
+	module.exports = function(grunt) {
+
+		//Add to config
+	  	grunt.initConfig({
+			msl: {
+			  options: {
+			    port: /*Port to run server on*/,
+			    debug: /*Set to 'true' or 'false'*/
+			  },
+			  target: /*Location of project to wrap msl around*/
+			}
+		});
+
+		//Load task
+		grunt.loadNpmTasks('grunt-msl');
+		grunt.registerTask('default', ['msl']);
 	}
