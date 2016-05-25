@@ -1,4 +1,4 @@
-Grunt plugin for running msl tests.
+Grunt plugin for running msl tests. Please see http://finraos.github.io/MSL/gettingstarted.html for more information.
 
 	module.exports = function(grunt) {
 
